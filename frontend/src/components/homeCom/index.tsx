@@ -5,7 +5,6 @@ import AboutUS from "./aboutUs";
 const HomeCom = () => {
   return (
     <div>
-      <Navbar />
       <HeroSection />
       <AboutUS />
     </div>

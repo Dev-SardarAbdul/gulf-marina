@@ -4,12 +4,12 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Barlow', sans-serif !important;
   } 
  body
 {
   overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Barlow', sans-serif !important;
    
 }
 
@@ -89,6 +89,10 @@ iframe
 
   /* Models styles */
 
+
+  .navbar-light .navbar-toggler {
+    border-color: rgba(238, 103, 0, 1) !important;
+  }
 
    
  
