@@ -27,9 +27,7 @@ function HeroSection() {
           <Navbar />
         </div>
         <Swiper
-          slidesPerGroup={1}
           modules={[Autoplay, Pagination]}
-          spaceBetween={15}
           autoplay={true}
           navigation={{
             prevEl: ".button-prev",
@@ -37,7 +35,7 @@ function HeroSection() {
           }}
           pagination={true}
           grabCursor={true}
-          slidesPerView={1} // Set slidesPerView to 1 to show only one slide at a time
+          slidesPerView={1}
         >
           <SwiperSlide>
             <img className="img-fluid heroImgs" src={heroTruck} />
