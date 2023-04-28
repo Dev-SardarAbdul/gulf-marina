@@ -1,83 +1,69 @@
 import { MainContainer, Navbar } from "components/common";
-import { HeroSectionWrapper } from "./styled";
+import { HeroSectionWrapper, SwipperWrapper } from "./styled";
 import React, { useState } from "react";
 import { heroTruck, heroContainer, heroship } from "assets";
 import "swiper/swiper-bundle.min.css";
+import "swiper/modules/pagination/pagination";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
-
-const breakpoints = {
-  // when window width is >= 320px
-  320: {
-    slidesPerView: 1,
-  },
-
-  // when window width is >= 640px
-  576: {
-    slidesPerView: 1.1,
-  },
-  // when window width is >= 768px
-  768: {
-    slidesPerView: 1.5,
-  },
-  992: {
-    slidesPerView: 2,
-  },
-  1200: {
-    slidesPerView: 1,
-  },
-  1400: {
-    slidesPerView: 1,
-  },
-};
 
 function HeroSection() {
   const [swiper, setSwiper] = useState(null); // define swiper state
 
   return (
     <HeroSectionWrapper>
-      <Navbar />
-
-      <Swiper
-        breakpoints={breakpoints}
-        modules={[]}
-        spaceBetween={15}
-        navigation={{
-          prevEl: ".button-prev",
-          nextEl: ".button-next",
-        }}
-        pagination={{
-          el: ".swiper-pagination",
-          clickable: true,
-        }}
-        grabCursor={true}
-        slidesPerView={1} // Set slidesPerView to 1 to show only one slide at a time
-      >
-        <SwiperSlide>
-          <img src={heroTruck} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={heroContainer} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={heroship} />
-        </SwiperSlide>
-      </Swiper>
-      <div>
-        <button
-          className="button-prev"
-          onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
+      <SwipperWrapper>
+        <div className="navDiv">
+          <Navbar />
+        </div>
+        <Swiper
+          slidesPerGroup={1}
+          modules={[Autoplay, Pagination]}
+          spaceBetween={15}
+          autoplay={true}
+          navigation={{
+            prevEl: ".button-prev",
+            nextEl: ".button-next",
+          }}
+          pagination={true}
+          grabCursor={true}
+          slidesPerView={1} // Set slidesPerView to 1 to show only one slide at a time
         >
-          prev
-        </button>
-        <button
-          className="button-next"
-          onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
-        >
-          next
-        </button>
-      </div>
+          <SwiperSlide>
+            <img className="img-fluid heroImgs" src={heroTruck} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="img-fluid heroImgs" src={heroContainer} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img className="img-fluid heroImgs" src={heroship} />
+          </SwiperSlide>
+        </Swiper>
+        <div className="btnsDiv">
+          <button
+            className="button-prev swiperBtn"
+            onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
+          >
+            <AiOutlineArrowLeft color="#fff" fontSize={20} cursor="pointer" />
+          </button>
+          <button
+            className="button-next swiperBtn"
+            onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
+          >
+            <AiOutlineArrowRight color="#fff" fontSize={20} cursor="pointer" />
+          </button>
+        </div>
+      </SwipperWrapper>
     </HeroSectionWrapper>
   );
 }
