@@ -44,6 +44,7 @@ export const ChooseUsiHeading = styled.h1`
   text-align: center;
   color: #ee6700;
   margin-top: 10px;
+  font-size: 50px;
 `;
 
 export const ChooseUsiText = styled.p`

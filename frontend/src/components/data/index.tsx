@@ -2,25 +2,7 @@ import { AiOutlineGift } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
 import { BsGlobe } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
-
-export const networkObj = [
-  {
-    name: "Ethereum",
-    value: "ethereum",
-  },
-  {
-    name: "Avalanche",
-    value: "avax",
-  },
-  {
-    name: "Binance Smart Chain",
-    value: "bsc",
-  },
-  {
-    name: "Polygon",
-    value: "polygon",
-  },
-];
+import { cardAirplane, cardShip, cardTruck } from "assets";
 
 export const chooseUsData = [
   {
@@ -46,5 +28,26 @@ export const chooseUsData = [
     icon: <GiCommercialAirplane color="#fff" />,
     heading: "Modern Vehicles Fleet",
     text: "Our fleet consists of modern vehicles that are well-maintained and equipped with the latest technology.  With our modern fleet, we are able to provide reliable and efficient transportation services that meet the needs of our customers.",
+  },
+];
+
+export const servicesCardData = [
+  {
+    id: 1,
+    img: cardAirplane,
+    title: "Air Freight",
+    text: "Our air cargo transportation products benefit from a global organization and advanced logistics solutions. ",
+  },
+  {
+    id: 2,
+    img: cardShip,
+    title: "Ocean Freight",
+    text: "We have invested time to familiarize ourselves with your processes, as the sea freight service has experienced significant growth in recent years.",
+  },
+  {
+    id: 3,
+    img: cardTruck,
+    title: "Road Freight",
+    text: "With a widespread network and advanced logistics solutions, our land transportation services cater to businesses of all types and sizes.",
   },
 ];

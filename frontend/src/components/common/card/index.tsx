@@ -1,34 +1,20 @@
 import React from "react";
-import {
-  MainCard,
-  MainBody,
-  MainTitle,
-  MainText,
-  MainImg,
-  IconImg,
-} from "./cardElement";
+import { CardWrapper } from "./cardElement";
+import Card from "react-bootstrap/Card";
+import { cardAirplane } from "assets";
 
-type Props = {
-  children?: any;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-};
-
-const Card: React.FC<Props> = ({
-  children,
-  onClick,
-}: {
-  children?: any;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-}) => {
+const ServicesCard = ({ item }) => {
   return (
-    <div className="mainCard">
-      {" "}
-      <MainCard onClick={onClick}>
-        <MainImg />
-        <MainBody>{children}</MainBody>
-      </MainCard>{" "}
-    </div>
+    <CardWrapper>
+      <Card>
+        <img src={item.img} className="img-fluid airplane" />
+        <Card.Body>
+          <Card.Title>{item.title}</Card.Title>
+          <Card.Text>{item.text}</Card.Text>
+        </Card.Body>
+      </Card>
+    </CardWrapper>
   );
 };
 
-export default Card;
+export default ServicesCard;
