@@ -115,6 +115,7 @@ export const HeroMainText = styled.h2`
 
   span {
     color: #ee6700;
+    font-family: "Teko" !important;
   }
 
   @media (max-width: 991.98px) {
