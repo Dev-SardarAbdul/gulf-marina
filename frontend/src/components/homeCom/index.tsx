@@ -4,6 +4,7 @@ import AboutUS from "./aboutUs";
 import WhyChooseUs from "./whyChooseUs";
 import Services from "./servicesSection";
 import ContactUs from "./contactUs";
+import Faqs from "./faqs";
 
 const HomeCom = () => {
   return (
@@ -13,6 +14,7 @@ const HomeCom = () => {
       <WhyChooseUs />
       <Services />
       <ContactUs />
+      <Faqs />
     </div>
   );
 };

@@ -33,7 +33,7 @@ export const ContactUsHeader = styled.h2`
   text-align: center;
   text-transform: capitalize;
   color: #ffffff;
-  margin-top: 10rem;
+  margin-top: 7rem;
 
   @media (max-width: 991.98px) {
     margin-top: 4rem;

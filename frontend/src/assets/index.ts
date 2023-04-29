@@ -17,3 +17,5 @@ export { default as hoverAirplane } from "./images/hoverAirplane.png";
 export { default as hoverShip } from "./images/hoverShip.png";
 export { default as hoverTruck } from "./images/hoverTruck.png";
 export { default as contactUs } from "./images/contactUs.png";
+export { default as question } from "./images/question.png";
+export { default as arrow } from "./images/arrow.png";
