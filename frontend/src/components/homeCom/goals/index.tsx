@@ -17,7 +17,7 @@ const GoalsSection = () => {
   return (
     <GoalsWrapper>
       <MainContainer>
-        <GoalsHeading>Our Goals in Numbers</GoalsHeading>
+        <GoalsHeading>Our Achievements in Numbers</GoalsHeading>
         <GoalsText>
           Transmax is the world’s driving worldwide coordinations supplier — we
           uphold industry and exchange the worldwide trade of merchandise
