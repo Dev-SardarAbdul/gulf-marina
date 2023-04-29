@@ -11,6 +11,7 @@ type Props = {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   connectWallet?: boolean;
   isDisabled?: boolean;
+  readMore?: any;
 };
 
 const Button: React.FC<Props> = ({
@@ -22,6 +23,7 @@ const Button: React.FC<Props> = ({
   connectWallet,
   isDisabled,
   onClick,
+  readMore,
 }: {
   children: any;
   primary?: boolean;
@@ -30,6 +32,7 @@ const Button: React.FC<Props> = ({
   buttonEnd?: boolean;
   connectWallet?: boolean;
   isDisabled?: boolean;
+  readMore?: any;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }) => {
   return (
@@ -42,6 +45,7 @@ const Button: React.FC<Props> = ({
         connectWallet={connectWallet}
         onClick={onClick}
         disabled={isDisabled}
+        readMore={readMore}
       >
         {children}
       </MainButton>

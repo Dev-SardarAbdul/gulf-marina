@@ -6,6 +6,7 @@ interface Props {
   buttonCenter?: boolean;
   buttonEnd?: boolean;
   connectWallet?: boolean;
+  readMore?: boolean;
 }
 export const MainButton = styled.button<Props>`
   :disabled {
@@ -46,6 +47,22 @@ export const MainButton = styled.button<Props>`
       font-weight: bold;
       border: 3px solid #ffee00;
       background: transparent;
+    `}
+    ${(p) =>
+    p.readMore &&
+    css`
+      width: 121px;
+      height: 35px;
+      background: #ee6700;
+      border-radius: 32px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #ffffff;
+      border: none;
     `}
 `;
 
