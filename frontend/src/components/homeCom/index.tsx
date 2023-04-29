@@ -3,6 +3,7 @@ import HeroSection from "./heroSection";
 import AboutUS from "./aboutUs";
 import WhyChooseUs from "./whyChooseUs";
 import Services from "./servicesSection";
+import ContactUs from "./contactUs";
 
 const HomeCom = () => {
   return (
@@ -11,6 +12,7 @@ const HomeCom = () => {
       <AboutUS />
       <WhyChooseUs />
       <Services />
+      <ContactUs />
     </div>
   );
 };

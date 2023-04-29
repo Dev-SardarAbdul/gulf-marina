@@ -16,3 +16,4 @@ export { default as cardAirplane } from "./images/cardAirplane.png";
 export { default as hoverAirplane } from "./images/hoverAirplane.png";
 export { default as hoverShip } from "./images/hoverShip.png";
 export { default as hoverTruck } from "./images/hoverTruck.png";
+export { default as contactUs } from "./images/contactUs.png";
