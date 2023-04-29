@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
     <ChooseUsWrapper>
       <MainContainer>
         <ChooseUsMiniHeading> Why Choose Us ?</ChooseUsMiniHeading>
-        <ChooseUsiHeading>THE MAIN FEATURES</ChooseUsiHeading>
+        <ChooseUsiHeading>The Main Features</ChooseUsiHeading>
         <ChooseUsiText>
           We are committed to providing exceptional service that meets the needs
           of our customers. Our top features include 100% customer satisfaction,

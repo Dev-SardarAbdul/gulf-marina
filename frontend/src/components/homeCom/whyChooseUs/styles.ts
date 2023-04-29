@@ -32,7 +32,7 @@ export const ChooseUsWrapper = styled.div`
 export const ChooseUsMiniHeading = styled.h1`
   font-size: 14px;
   margin-bottom: 5px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   color: #000;
 `;
