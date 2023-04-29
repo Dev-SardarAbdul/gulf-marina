@@ -30,7 +30,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
 function AboutUS() {
   return (
-    <AboutUsWrapper>
+    <AboutUsWrapper id="about">
       <MainContainer>
         <AboutUsHeader>About Us</AboutUsHeader>
         <AboutUsSubText>

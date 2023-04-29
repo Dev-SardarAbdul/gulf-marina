@@ -21,6 +21,10 @@ export const NavbarWrapper = styled.div`
         color: #ee6700;
       }
 
+      &.nav-link.active {
+        color: #fff !important;
+      }
+
       &::after {
         content: "";
         position: absolute;

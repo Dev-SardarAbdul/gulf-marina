@@ -15,7 +15,7 @@ import { servicesCardData } from "components/data";
 
 const Services = () => {
   return (
-    <ServicesWrapper>
+    <ServicesWrapper id="services">
       <MainContainer>
         <ServicesHeading>Explore Our Services</ServicesHeading>
         <ServicesText>

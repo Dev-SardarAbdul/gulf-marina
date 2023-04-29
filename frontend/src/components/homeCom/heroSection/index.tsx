@@ -28,7 +28,7 @@ function HeroSection() {
   const [swiper, setSwiper] = useState(null); // define swiper state
 
   return (
-    <HeroSectionWrapper>
+    <HeroSectionWrapper id="home">
       <SwipperWrapper>
         <div className="navDiv">
           <Navbar />

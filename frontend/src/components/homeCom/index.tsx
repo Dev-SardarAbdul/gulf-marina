@@ -1,4 +1,4 @@
-import { Navbar } from "components/common";
+import { Footer, Navbar } from "components/common";
 import HeroSection from "./heroSection";
 import AboutUS from "./aboutUs";
 import WhyChooseUs from "./whyChooseUs";
@@ -17,6 +17,7 @@ const HomeCom = () => {
       <GoalsSection />
       <Faqs />
       <ContactUs />
+      <Footer />
     </div>
   );
 };

@@ -1,67 +1,70 @@
-import { MainCol, MainContainer, MainRow } from "components/common";
+import React from "react";
 import {
-  CopyrightText,
-  FooterImageDiv,
   FooterWrapper,
-  IconContainer,
-  IconHolder,
-  TermsText,
-  TextContainer,
-  BtnContainer,
-  JoinNow,
+  FooterText,
+  FooterCompanyHeading,
+  FooterOl,
+  FooterBorderBottom,
+  FooterCopyWrite,
+  FooterIconWrapper,
 } from "./element";
-import { FaTelegramPlane, FaTwitter, FaYoutube } from "react-icons/fa";
+import { MainCol, MainContainer, MainRow } from "components/common";
+import { navLogo, footerArrow } from "assets";
+import { FaFacebookF } from "react-icons/fa";
+import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 
-function Footer() {
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+const FooterSection = () => {
   return (
     <FooterWrapper>
       <MainContainer>
+        <img src={navLogo} className="footerLogo" />
         <MainRow>
-          <MainCol lg={3}>
-            <FooterImageDiv>
-              <img className="img-fluid logo" src="" />
-              <p className="brandText">dalle inu</p>
-            </FooterImageDiv>
-          </MainCol>
           <MainCol lg={6}>
-            <BtnContainer>
-              <JoinNow>Buy $Dalle</JoinNow>
-            </BtnContainer>
-            <TextContainer>
-              <CopyrightText>
-                Copyright © [{new Date().getFullYear()}]All rights reserved.
-              </CopyrightText>
-              <TermsText>Contact: info@dalleinu.ai</TermsText>
-            </TextContainer>
+            <FooterText>
+              Globalink Logistics offers customized logistics solutions that
+              simplify your business operations and fuel expansion. We ensure
+              prompt delivery of your shipments, making us your ideal logistics
+              partner.
+            </FooterText>
           </MainCol>
           <MainCol lg={3}>
-            <IconContainer>
-              {/* <IconHolder>
-                <FaDiscord className="footerIcon" />
-              </IconHolder> */}
-
-              <IconHolder>
-                <a href="https://t.me/Dalleainu" target="_blank">
-                  <FaTelegramPlane className="footerIcon" />
-                </a>
-              </IconHolder>
-
-              <IconHolder>
-                <a href=" https://twitter.com/Dalle_Inu" target="_blank">
-                  <FaTwitter className="footerIcon" />
-                </a>
-              </IconHolder>
-              <IconHolder>
-                <a href="https://www.youtube.com/@dalleinu" target="_blank">
-                  <FaYoutube className="footerIcon" />
-                </a>
-              </IconHolder>
-            </IconContainer>
+            <FooterCompanyHeading>Company</FooterCompanyHeading>
+            <FooterOl>About Us</FooterOl>
+            <FooterOl>Company </FooterOl>
+            <FooterOl>Press & Blog</FooterOl>
+            <FooterOl>Privacy Policy</FooterOl>
+          </MainCol>
+          <MainCol lg={3}>
+            <FooterIconWrapper>
+              <FaFacebookF className="marginIcon" />
+              <AiFillInstagram className="marginIcon" />
+              <AiOutlineTwitter className="marginIcon" />
+              <br />
+            </FooterIconWrapper>
+            <img
+              src={footerArrow}
+              onClick={scrollToTop}
+              className="footerImg"
+            />
           </MainCol>
         </MainRow>
+        <FooterBorderBottom></FooterBorderBottom>
       </MainContainer>
+      <FooterCopyWrite>
+        Copyright © {currentYear} All rights reserved
+      </FooterCopyWrite>
     </FooterWrapper>
   );
-}
+};
 
-export default Footer;
+export default FooterSection;

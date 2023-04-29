@@ -3,7 +3,7 @@ import { BtnDiv, ContactUsHeader, ContactUsWrapper } from "./styles";
 
 function ContactUs() {
   return (
-    <ContactUsWrapper>
+    <ContactUsWrapper id="contact">
       <MainContainer>
         <ContactUsHeader>
           The top provider of contract <br /> logistics in the world.

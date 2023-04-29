@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 {
   overflow-x: hidden !important;
   font-family: 'Barlow', sans-serif !important;
-   
+   scroll-behavior: smooth !important;
 }
 
 iframe
