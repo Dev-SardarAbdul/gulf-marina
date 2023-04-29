@@ -3,6 +3,12 @@ import { FiUsers } from "react-icons/fi";
 import { BsGlobe } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { cardAirplane, cardShip, cardTruck } from "assets";
+import {
+  AiOutlineSetting,
+  AiOutlineGlobal,
+  AiOutlineShoppingCart,
+} from "react-icons/ai";
+import { IoLocationOutline } from "react-icons/io5";
 
 export const chooseUsData = [
   {
@@ -49,5 +55,36 @@ export const servicesCardData = [
     img: cardTruck,
     title: "Road Freight",
     text: "With a widespread network and advanced logistics solutions, our land transportation services cater to businesses of all types and sizes.",
+  },
+];
+
+export const goalsData = [
+  {
+    id: 1,
+    img: <AiOutlineShoppingCart className="goalsIcon" />,
+    numberText: "100+",
+    title: "Warehouses Managed",
+    text: "We help you mitigate supply chain disruptions. ",
+  },
+  {
+    id: 2,
+    img: <AiOutlineSetting className="goalsIcon" />,
+    numberText: "80+",
+    title: "Supply Engineers",
+    text: "We help you mitigate supply chain disruptions. ",
+  },
+  {
+    id: 3,
+    img: <AiOutlineGlobal className="goalsIcon" />,
+    numberText: "30+",
+    title: "Countries Covered",
+    text: "We help you mitigate supply chain disruptions. ",
+  },
+  {
+    id: 4,
+    img: <IoLocationOutline className="goalsIcon" />,
+    numberText: "400+",
+    title: "Companies We Help",
+    text: "We help you mitigate supply chain disruptions. ",
   },
 ];
