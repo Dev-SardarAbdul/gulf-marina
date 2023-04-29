@@ -51,8 +51,8 @@ export const MainButton = styled.button<Props>`
     ${(p) =>
     p.readMore &&
     css`
-      width: 121px;
-      height: 35px;
+      padding: 8px 20px;
+
       background: #ee6700;
       border-radius: 32px;
       font-family: "Barlow";

@@ -104,11 +104,12 @@ export const TextWrapper = styled.div`
 `;
 
 export const HeroMainText = styled.h2`
-  font-family: "Teko";
+  font-family: "Teko" !important;
+
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
-  line-height: 140%;
+  line-height: 100%;
   text-transform: capitalize;
   color: #ffffff;
 
