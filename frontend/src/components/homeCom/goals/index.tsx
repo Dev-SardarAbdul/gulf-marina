@@ -10,6 +10,8 @@ import {
 } from "./styles";
 import { MainCol, MainContainer, MainRow } from "components/common";
 import { goalsData } from "components/data";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const GoalsSection = () => {
   return (
@@ -26,7 +28,18 @@ const GoalsSection = () => {
             <MainCol sm={6} lg={3}>
               <GoalsContentWrapper>
                 {item.img}
-                <GoalsContenttext>{item.numberText}</GoalsContenttext>
+
+                <GoalsContenttext>
+                  <CountUp end={item.numberText} redraw={true} delay={0.2}>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
+                  <span>+</span>
+                </GoalsContenttext>
+
                 <GoalsContentHeading>{item.title}</GoalsContentHeading>
                 <GoalsContentDeatil>{item.text}</GoalsContentDeatil>
               </GoalsContentWrapper>
