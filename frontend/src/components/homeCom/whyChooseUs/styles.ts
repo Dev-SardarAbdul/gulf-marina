@@ -39,7 +39,7 @@ export const ChooseUsMiniHeading = styled.h1`
 
 export const ChooseUsiHeading = styled.h1`
   font-family: "Teko" !important;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 40px;
   text-align: center;
   color: #ee6700;
