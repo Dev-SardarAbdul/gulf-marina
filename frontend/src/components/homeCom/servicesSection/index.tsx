@@ -26,9 +26,9 @@ const Services = () => {
         </ServicesText>
         <CardDiv>
           <MainRow>
-            {servicesCardData.map((item) => (
+            {servicesCardData.map((item, index) => (
               <MainCol lg={4}>
-                <ServicesCard item={item} />
+                <ServicesCard item={item} index={index} />
               </MainCol>
             ))}
           </MainRow>

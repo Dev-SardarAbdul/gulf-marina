@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { hoverAirplane, hoverShip, hoverTruck } from "assets";
 
 export const CardWrapper = styled.div`
   .card {
@@ -8,6 +9,41 @@ export const CardWrapper = styled.div`
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
     border-bottom: 5px solid #ee6700;
     padding: 2rem 1rem;
+    position: relative;
+
+    .overLay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: 0.3s all ease-in-out;
+
+      &.darkBG {
+        background: rgba(43, 43, 43, 0.89);
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+        transition: 0.3s all ease-in-out;
+      }
+    }
+
+    &.firstBG {
+      background-image: url(${hoverAirplane});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.secondBG {
+      background-image: url(${hoverShip});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.thirdBG {
+      background-image: url(${hoverTruck});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
     @media (max-width: 991.98px) {
       width: 375px;
@@ -30,6 +66,10 @@ export const CardWrapper = styled.div`
     color: #2b2b2b;
     text-align: center;
     margin-top: 1rem;
+
+    &.whiteText {
+      color: #fff;
+    }
   }
 
   .card-text {
@@ -43,12 +83,17 @@ export const CardWrapper = styled.div`
     text-transform: capitalize;
     color: #484848;
     margin-top: 3rem;
+
+    &.whiteText {
+      color: #fff;
+      font-weight: 500;
+    }
   }
 
   .airplane {
     width: 64.25px;
     height: 64.25px;
     display: block;
-    margin: 1rem auto;
+    margin: 3rem auto 1rem auto;
   }
 `;

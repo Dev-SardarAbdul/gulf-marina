@@ -34,6 +34,11 @@ export const ServicesText = styled.p`
   line-height: 24px;
   text-transform: capitalize;
   color: #484848;
+
+  @media (max-width: 575.98px) {
+    text-align: justify;
+    text-align-last: center;
+  }
 `;
 
 export const CardDiv = styled.div`
