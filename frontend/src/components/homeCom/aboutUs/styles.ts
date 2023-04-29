@@ -6,6 +6,10 @@ export const AboutUsWrapper = styled.div`
   .container {
     margin-top: 4rem;
     margin-bottom: 4rem;
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
@@ -40,6 +44,10 @@ export const BtnDiv = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+
+  @media (max-width: 575.98px) {
+    margin: 1rem 0;
+  }
 `;
 
 export const SwiperWrapper = styled.div`

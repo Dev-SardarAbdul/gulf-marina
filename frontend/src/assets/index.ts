@@ -9,3 +9,4 @@ export { default as aboutUs3 } from "./images/aboutUs3.png";
 export { default as aboutUs4 } from "./images/aboutUs4.png";
 export { default as aboutUs5 } from "./images/aboutUs5.png";
 export { default as aboutUs6 } from "./images/aboutUs6.png";
+export { default as chooseImg } from "./images/chooseImg.png";
