@@ -22,3 +22,5 @@ export { default as arrow } from "./images/arrow.png";
 export { default as goalsImg } from "./images/goalsImg.png";
 export { default as footerBg } from "./images/footerBg.png";
 export { default as footerArrow } from "./images/footerArrow.png";
+export { default as orangeIcon } from "./images/orangeIcon.png";
+export { default as faqsQuestion } from "./images/faqQuestion.png";

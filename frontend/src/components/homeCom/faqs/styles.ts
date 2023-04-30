@@ -1,12 +1,18 @@
-import { arrow } from "assets";
+import { orangeIcon } from "assets";
 import styled from "styled-components";
 
 export const FaqsWrapper = styled.div`
   overflow: hidden;
 
+  background-color: #f5f5f5;
+
   .container {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  .marginFaqs {
+    margin-top: 6rem;
   }
 `;
 
@@ -23,16 +29,17 @@ export const FaqsHeader = styled.h2`
 
 export const AccordionDiv = styled.div`
   .accordion-button {
-    background: #ee6700;
+    background: #fff;
     font-family: "Teko" !important;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 100%;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #ee6700;
     border-radius: 32px !important;
     border: none !important;
+    background: transparent !important;
   }
 
   .accordion-button:focus {
@@ -51,7 +58,7 @@ export const AccordionDiv = styled.div`
   }
 
   .accordion-body {
-    color: #fff !important;
+    color: #ee6700 !important;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -62,33 +69,46 @@ export const AccordionDiv = styled.div`
   .accordion-item {
     margin-top: 0.5rem;
     border: none !important;
-    background: #ee6700;
-    border-radius: 32px !important;
+    border-radius: none;
+    position: relative;
+    background: transparent !important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 5px;
+      background-color: #ee6700;
+      transform-origin: bottom center;
+      transition: transform 0.25s ease-out;
+      z-index: 100;
+    }
+
+    &::after {
+      transform: scaleX(1);
+      transform-origin: bottom center;
+    }
   }
 
   .accordion-button:not(.collapsed) {
-    color: #fff !important;
+    color: #ee6700 !important;
   }
 
   .accordion-button::after {
-    background-image: url(${arrow});
+    background-image: url(${orangeIcon});
   }
 `;
 
+export const FaqsWrapperTwo = styled.div``;
+
 export const ImgDiv = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  justify-content: center;
-
-  @media (max-width: 991.98px) {
-    margin-top: 2rem;
-    justify-content: center;
-  }
-
-  .question {
-    @media (max-width: 767.98px) {
-      width: 200px;
-      height: 250px;
-    }
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
   }
 `;
