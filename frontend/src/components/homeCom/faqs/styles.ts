@@ -28,6 +28,12 @@ export const FaqsHeader = styled.h2`
 `;
 
 export const AccordionDiv = styled.div`
+  margin-top: 2rem;
+
+  @media (max-width: 991.98px) {
+    margin-top: 0;
+  }
+
   .accordion-button {
     background: #fff;
     font-family: "Teko" !important;

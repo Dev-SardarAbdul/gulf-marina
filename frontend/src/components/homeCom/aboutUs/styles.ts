@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const AboutUsWrapper = styled.div`
   overflow: hidden;
@@ -24,7 +25,7 @@ export const AboutUsHeader = styled.h2`
   text-align: center;
 `;
 
-export const AboutUsSubText = styled.h4`
+export const AboutUsSubText = styled(motion.h4)`
   font-style: normal;
   font-weight: 500;
   font-size: 20px;

@@ -16,6 +16,7 @@ import {
 } from "assets";
 import "swiper/modules/effect-coverflow/effect-coverflow.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 import SwiperCore, {
   Navigation,
@@ -25,6 +26,8 @@ import SwiperCore, {
   Autoplay,
   EffectCoverflow,
 } from "swiper";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
@@ -32,14 +35,18 @@ function AboutUS() {
   return (
     <AboutUsWrapper id="about">
       <MainContainer>
-        <AboutUsHeader>About Us</AboutUsHeader>
-        <AboutUsSubText>
-          At Globalink Logistics, we are passionate about logistics. Our team of
-          experienced professionals is dedicated to providing personalized
-          solutions that meet the unique needs of our clients. We pride
-          ourselves on our commitment to quality, efficiency, and customer
-          satisfaction.
-        </AboutUsSubText>
+        <AnimationOnScroll animateIn="animate__bounceInDown">
+          <AboutUsHeader>About Us</AboutUsHeader>
+
+          <AboutUsSubText>
+            At Globalink Logistics, we are passionate about logistics. Our team
+            of experienced professionals is dedicated to providing personalized
+            solutions that meet the unique needs of our clients. We pride
+            ourselves on our commitment to quality, efficiency, and customer
+            satisfaction.
+          </AboutUsSubText>
+        </AnimationOnScroll>
+
         <SwiperWrapper>
           <Swiper
             // activeSlideKey='2'
@@ -85,9 +92,12 @@ function AboutUS() {
             </SwiperSlide>
           </Swiper>
         </SwiperWrapper>
-        <BtnDiv>
-          <Button readMore={true}>More About Us</Button>
-        </BtnDiv>
+
+        <AnimationOnScroll animateIn="animate__zoomIn">
+          <BtnDiv>
+            <Button readMore={true}>More About Us</Button>
+          </BtnDiv>
+        </AnimationOnScroll>
       </MainContainer>
     </AboutUsWrapper>
   );

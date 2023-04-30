@@ -1,7 +1,7 @@
 import { NavButton, NavbarWrapper } from "./element";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { MainContainer } from "components/common";
+import { Button, MainContainer } from "components/common";
 import { navLogo } from "assets";
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ function Topbar() {
               <Nav.Link href="#services">Services</Nav.Link>
               <Nav.Link href="#contact">Contact Us</Nav.Link>
             </Nav>
-            <NavButton>Contact Us</NavButton>
+            <Button readMore={true}>Contact Us</Button>
           </Navbar.Collapse>
         </MainContainer>
       </Navbar>

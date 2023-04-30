@@ -42,6 +42,11 @@ export const SwipperWrapper = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    &:hover {
+      animation-name: rubberBand;
+      animation-duration: 1s;
+    }
   }
 
   .swiper-pagination-bullet-active {

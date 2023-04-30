@@ -12,26 +12,32 @@ import {
   ServicesCard,
 } from "components/common";
 import { servicesCardData } from "components/data";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Services = () => {
   return (
     <ServicesWrapper id="services">
       <MainContainer>
-        <ServicesHeading>Explore Our Services</ServicesHeading>
-        <ServicesText>
-          Globalink Logistics is a trusted provider of reliable land
-          transportation solutions for international trade. We have the
-          expertise and global network to support businesses of all sizes and
-          industries with their logistics needs.
-        </ServicesText>
+        <AnimationOnScroll animateIn="animate__bounceInDown">
+          <ServicesHeading>Explore Our Services</ServicesHeading>
+          <ServicesText>
+            Globalink Logistics is a trusted provider of reliable land
+            transportation solutions for international trade. We have the
+            expertise and global network to support businesses of all sizes and
+            industries with their logistics needs.
+          </ServicesText>
+        </AnimationOnScroll>
         <CardDiv>
-          <MainRow>
-            {servicesCardData.map((item, index) => (
-              <MainCol lg={4}>
-                <ServicesCard item={item} index={index} />
-              </MainCol>
-            ))}
-          </MainRow>
+          <AnimationOnScroll animateIn="animate__fadeInUp">
+            <MainRow>
+              {servicesCardData.map((item, index) => (
+                <MainCol lg={4}>
+                  <ServicesCard item={item} index={index} />
+                </MainCol>
+              ))}
+            </MainRow>
+          </AnimationOnScroll>
         </CardDiv>
       </MainContainer>
     </ServicesWrapper>

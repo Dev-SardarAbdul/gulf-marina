@@ -63,6 +63,11 @@ export const MainButton = styled.button<Props>`
       text-transform: capitalize;
       color: #ffffff;
       border: none;
+
+      &:hover {
+        animation-name: rubberBand;
+        animation-duration: 1s;
+      }
     `}
 `;
 

@@ -11,6 +11,11 @@ export const CardWrapper = styled.div`
     padding: 2rem 1rem;
     position: relative;
 
+    &:hover {
+      animation-name: headShake;
+      animation-duration: 1s;
+    }
+
     .overLay {
       position: absolute;
       width: 100%;
