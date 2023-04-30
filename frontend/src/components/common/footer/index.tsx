@@ -39,16 +39,34 @@ const FooterSection = () => {
           </MainCol>
           <MainCol lg={3}>
             <FooterCompanyHeading>Company</FooterCompanyHeading>
-            <FooterOl>About Us</FooterOl>
-            <FooterOl>Company </FooterOl>
-            <FooterOl>Press & Blog</FooterOl>
-            <FooterOl>Privacy Policy</FooterOl>
+            <FooterOl>
+              <a href="#home">Home</a>
+            </FooterOl>
+            <FooterOl>
+              {" "}
+              <a href="#about">About Us</a>{" "}
+            </FooterOl>
+            <FooterOl>
+              {" "}
+              <a href="#services">Services</a>
+            </FooterOl>
+            <FooterOl>
+              {" "}
+              <a href="#contact">Contact Us</a>
+            </FooterOl>
           </MainCol>
           <MainCol lg={3}>
             <FooterIconWrapper>
-              <FaFacebookF className="marginIcon" />
-              <AiFillInstagram className="marginIcon" />
-              <AiOutlineTwitter className="marginIcon" />
+              <a href="https://facebook.com/">
+                <FaFacebookF className="marginIcon" />
+              </a>
+              <a href="https://instagram.com/">
+                {" "}
+                <AiFillInstagram className="marginIcon" />
+              </a>
+              <a href="https://twitter.com/">
+                <AiOutlineTwitter className="marginIcon" />
+              </a>
               <br />
             </FooterIconWrapper>
             <img

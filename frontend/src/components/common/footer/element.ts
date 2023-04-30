@@ -96,7 +96,25 @@ export const FooterOl = styled.li`
   font-size: 20px;
   line-height: 30px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-decoration: none !important;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    color: #ee6700 !important;
+  }
+
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      color: #ee6700 !important;
+    }
+  }
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
@@ -111,6 +129,16 @@ export const FooterIconWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+  }
+
+  a {
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      color: #ee6700 !important;
+    }
   }
 `;
 
