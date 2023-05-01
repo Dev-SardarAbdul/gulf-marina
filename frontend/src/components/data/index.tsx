@@ -48,13 +48,31 @@ export const servicesCardData = [
     id: 2,
     img: cardShip,
     title: "Ocean Freight",
-    text: "We understand that sea freight has experienced significant growth in recent years and have invested time to familiarize ourselves with our clients' processes and requirements. Our team has the expertise necessary to handle the most complex sea freight logistics challenges. ",
+    text: "We understand that sea freight has experienced significant growth in recent years and have invested time to familiarize ourselves with our clients' processes and requirements. Our team has the expertise necessary to handle the most complex sea freight challenges. ",
   },
   {
     id: 3,
     img: cardTruck,
     title: "Road Freight",
     text: "Our land transportation services are designed to meet the needs of businesses of all types and sizes, thanks to our extensive network and state-of-the-art logistics solutions. ",
+  },
+  {
+    id: 4,
+    img: cardTruck,
+    title: "Custom Clearance",
+    text: "As a company, we specialize in providing comprehensive customs clearance services to businesses of all sizes. Our team of experienced customs brokers and agents can help ensure that your goods are imported or exported smoothly . ",
+  },
+  {
+    id: 5,
+    img: cardTruck,
+    title: "Ware Housing",
+    text: "Our company provides top-quality warehousing services to meet the storage needs of our clients. We offer a variety of storage solutions, including short-term and long-term storage, temperature-controlled storage, and inventory management services. ",
+  },
+  {
+    id: 6,
+    img: cardTruck,
+    title: "DDP & DUP",
+    text: "Our company provides DDP (Delivered Duty Paid) and DUP (Delivered at Place Unloaded) services to our clients. DDP service means we take care of all import formalities and pay any applicable duties and taxes on behalf of the client, ensuring hassle-free delivery. ",
   },
 ];
 

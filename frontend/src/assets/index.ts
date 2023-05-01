@@ -25,3 +25,6 @@ export { default as footerArrow } from "./images/footerArrow.png";
 export { default as orangeIcon } from "./images/orangeIcon.png";
 export { default as faqsQuestion } from "./images/faqQuestion.png";
 export { default as contact } from "./images/contact.png";
+export { default as warehouseImg } from "./images/warehouseImg.png";
+export { default as customImg } from "./images/customImg.png";
+export { default as ddpImg } from "./images/ddpImg.png";

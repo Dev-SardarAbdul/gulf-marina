@@ -37,7 +37,7 @@ const Services = () => {
           <AnimationOnScroll animateIn="animate__fadeInUp">
             <MainRow>
               {servicesCardData.map((item, index) => (
-                <MainCol lg={4}>
+                <MainCol lg={6} xl={4}>
                   <ServicesCard item={item} index={index} />
                 </MainCol>
               ))}

@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import { hoverAirplane, hoverShip, hoverTruck } from "assets";
+import {
+  customImg,
+  ddpImg,
+  hoverAirplane,
+  hoverShip,
+  hoverTruck,
+  warehouseImg,
+} from "assets";
 
 export const CardWrapper = styled.div`
   .card {
@@ -10,6 +17,7 @@ export const CardWrapper = styled.div`
     border-bottom: 5px solid #ee6700;
     padding: 2rem 1rem;
     position: relative;
+    margin-bottom: 2rem;
 
     &:hover {
       animation-name: headShake;
@@ -45,6 +53,24 @@ export const CardWrapper = styled.div`
     }
     &.thirdBG {
       background-image: url(${hoverTruck});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.fourBG {
+      background-image: url(${customImg});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.fiveBG {
+      background-image: url(${warehouseImg});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.sixBG {
+      background-image: url(${ddpImg});
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -87,7 +113,7 @@ export const CardWrapper = styled.div`
     text-align-last: center;
     text-transform: capitalize;
     color: #484848;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 
     &.whiteText {
       color: #fff;

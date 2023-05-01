@@ -21,7 +21,10 @@ const ServicesCard = ({ item, index }) => {
         className={
           (isHovered && index === 0 && "firstBG") ||
           (isHovered && index === 1 && "secondBG") ||
-          (isHovered && index === 2 && "thirdBG")
+          (isHovered && index === 2 && "thirdBG") ||
+          (isHovered && index === 3 && "fourBG") ||
+          (isHovered && index === 4 && "fiveBG") ||
+          (isHovered && index === 5 && "sixBG")
         }
       >
         <div className={`overLay ${isHovered && "darkBG"}`}>
