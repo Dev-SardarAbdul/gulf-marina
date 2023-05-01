@@ -31,10 +31,11 @@ const FooterSection = () => {
         <MainRow>
           <MainCol lg={6}>
             <FooterText>
-              Globalink Logistics offers customized logistics solutions that
-              simplify your business operations and fuel expansion. We ensure
-              prompt delivery of your shipments, making us your ideal logistics
-              partner.
+              Gulf Marina offers customized logistics solutions that simplify
+              your business operations and fuel expansion. We ensure prompt
+              delivery of your shipments, making us your ideal logistics
+              partner. We offer customized logistics solutions that are tailored
+              to meet your specific needs.
             </FooterText>
           </MainCol>
           <MainCol lg={3}>
@@ -52,19 +53,19 @@ const FooterSection = () => {
             </FooterOl>
             <FooterOl>
               {" "}
-              <a href="#contact">Contact Us</a>
+              <a href="#whyUs">Why Choose Us?</a>
             </FooterOl>
           </MainCol>
           <MainCol lg={3}>
             <FooterIconWrapper>
-              <a href="https://facebook.com/">
+              <a href="https://facebook.com/" target="_blank">
                 <FaFacebookF className="marginIcon" />
               </a>
-              <a href="https://instagram.com/">
+              <a href="https://instagram.com/" target="_blank">
                 {" "}
                 <AiFillInstagram className="marginIcon" />
               </a>
-              <a href="https://twitter.com/">
+              <a href="https://twitter.com/" target="_blank">
                 <AiOutlineTwitter className="marginIcon" />
               </a>
               <br />
@@ -79,7 +80,7 @@ const FooterSection = () => {
         <FooterBorderBottom></FooterBorderBottom>
       </MainContainer>
       <FooterCopyWrite>
-        Copyright © {currentYear} All rights reserved
+        © {currentYear} by Gulf Marina. All rights reserved!
       </FooterCopyWrite>
     </FooterWrapper>
   );

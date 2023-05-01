@@ -6,8 +6,7 @@ import {
   SwipperWrapper,
   TextWrapper,
 } from "./styled";
-import React, { useState } from "react";
-import { heroTruck, heroContainer, heroship } from "assets";
+import { useState } from "react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/modules/pagination/pagination";
 
@@ -20,7 +19,6 @@ import SwiperCore, {
   Autoplay,
 } from "swiper";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import { Container } from "react-bootstrap";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -52,22 +50,24 @@ function HeroSection() {
                   for <span> Your Business.</span>
                 </HeroMainText>
                 <HeroSubText>
-                  At Globalink Logistics, we provide comprehensive logistics
-                  services that <br /> streamline your business operations and
-                  drive growth. Our solutions are <br />
+                  At Gulf Marina, we provide comprehensive logistics services
+                  that <br /> streamline your business operations and drive
+                  growth. Our solutions are <br />
                   tailored to meet your unique needs, ensuring that your
                   shipments are <br />
                   delivered on time, every time.
                 </HeroSubText>
                 <div className="mt-4 readMoreBtnDiv">
-                  <Button readMore={true}>Read More</Button>
+                  <a href="#whyUs">
+                    <Button readMore={true}>Why Choose Us?</Button>
+                  </a>
                 </div>
               </TextWrapper>
 
               <div className="btnsDiv">
                 <button
                   className="button-prev swiperBtn"
-                  onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
+                  onClick={() => swiper && swiper.slidePrev()}
                 >
                   <AiOutlineArrowLeft
                     color="#fff"
@@ -77,7 +77,7 @@ function HeroSection() {
                 </button>
                 <button
                   className="button-next swiperBtn"
-                  onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
+                  onClick={() => swiper && swiper.slideNext()}
                 >
                   <AiOutlineArrowRight
                     color="#fff"
@@ -107,14 +107,16 @@ function HeroSection() {
                 </HeroSubText>
 
                 <div className="mt-4 readMoreBtnDiv">
-                  <Button readMore={true}>Read More</Button>
+                  <a href="#whyUs">
+                    <Button readMore={true}>Why Choose Us?</Button>
+                  </a>
                 </div>
               </TextWrapper>
 
               <div className="btnsDiv">
                 <button
                   className="button-prev swiperBtn"
-                  onClick={() => swiper && swiper.slidePrev()} // check if swiper is defined before calling slidePrev()
+                  onClick={() => swiper && swiper.slidePrev()}
                 >
                   <AiOutlineArrowLeft
                     color="#fff"
@@ -124,7 +126,7 @@ function HeroSection() {
                 </button>
                 <button
                   className="button-next swiperBtn"
-                  onClick={() => swiper && swiper.slideNext()} // check if swiper is defined before calling slideNext()
+                  onClick={() => swiper && swiper.slideNext()}
                 >
                   <AiOutlineArrowRight
                     color="#fff"
@@ -143,10 +145,9 @@ function HeroSection() {
                   <span>customs brokerage needs.</span>
                 </HeroMainText>
                 <HeroSubText>
-                  At Globalink Logistics, we are committed to providing
-                  exceptional customer service <br /> and exceeding your
-                  expectations with our logistics solutions. We offer
-                  warehousing <br />
+                  At Gulf Marina, we are committed to provide exceptional
+                  customer service <br /> exceeding your expectations with our
+                  logistics solutions. We offer warehousing <br />
                   and distribution services to help you manage inventory and{" "}
                   fulfill orders quickly and <br /> efficiently. Our team of
                   logistics experts works closely with you to understand your{" "}
@@ -155,7 +156,9 @@ function HeroSection() {
                   goals.
                 </HeroSubText>
                 <div className="mt-4 readMoreBtnDiv">
-                  <Button readMore={true}>Read More</Button>
+                  <a href="#whyUs">
+                    <Button readMore={true}>Why Choose Us?</Button>
+                  </a>
                 </div>
               </TextWrapper>
 

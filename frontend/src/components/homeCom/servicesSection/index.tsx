@@ -22,10 +22,15 @@ const Services = () => {
         <AnimationOnScroll animateIn="animate__bounceInDown">
           <ServicesHeading>Explore Our Services</ServicesHeading>
           <ServicesText>
-            Globalink Logistics is a trusted provider of reliable land
-            transportation solutions for international trade. We have the
-            expertise and global network to support businesses of all sizes and
-            industries with their logistics needs.
+            Gulf Marina is a trusted provider of reliable transportation
+            solutions for local & international trade. We understand that timely
+            and secure delivery of goods is essential for the success of any
+            business, and we work tirelessly to ensure that our clients'
+            shipments reach their destinations on time and in good condition.
+            Whether it's by air, land or water, we have the capabilities to
+            handle the most complex logistics challenges with ease, giving our
+            clients peace of mind and the freedom to focus on their core
+            business activities.
           </ServicesText>
         </AnimationOnScroll>
         <CardDiv>

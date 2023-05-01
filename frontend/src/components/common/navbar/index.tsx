@@ -23,7 +23,9 @@ function Topbar() {
               <Nav.Link href="#services">Services</Nav.Link>
               <Nav.Link href="#contact">Contact Us</Nav.Link>
             </Nav>
-            <Button readMore={true}>Contact Us</Button>
+            <a href="#contact">
+              <Button readMore={true}>Contact Us</Button>
+            </a>
           </Navbar.Collapse>
         </MainContainer>
       </Navbar>

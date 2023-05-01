@@ -16,7 +16,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const WhyChooseUs = () => {
   return (
-    <ChooseUsWrapper>
+    <ChooseUsWrapper id="whyUs">
       <MainContainer>
         <AnimationOnScroll animateIn="animate__bounceInDown">
           <ChooseUsMiniHeading> Why Choose Us ?</ChooseUsMiniHeading>

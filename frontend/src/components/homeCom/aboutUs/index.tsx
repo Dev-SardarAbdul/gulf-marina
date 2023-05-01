@@ -39,11 +39,13 @@ function AboutUS() {
           <AboutUsHeader>About Us</AboutUsHeader>
 
           <AboutUsSubText>
-            At Globalink Logistics, we are passionate about logistics. Our team
-            of experienced professionals is dedicated to providing personalized
+            At Gulf Marina, we are passionate about logistics. Our team of
+            experienced professionals is dedicated to provide personalized
             solutions that meet the unique needs of our clients. We pride
             ourselves on our commitment to quality, efficiency, and customer
-            satisfaction.
+            satisfaction. We believe that our success is measured by the success
+            of our clients, and we are committed to build long-lasting
+            relationships based on trust, transparency, and mutual growth.
           </AboutUsSubText>
         </AnimationOnScroll>
 
@@ -95,7 +97,9 @@ function AboutUS() {
 
         <AnimationOnScroll animateIn="animate__zoomIn">
           <BtnDiv>
-            <Button readMore={true}>More About Us</Button>
+            <a href="#services">
+              <Button readMore={true}>Explore Our Services</Button>
+            </a>
           </BtnDiv>
         </AnimationOnScroll>
       </MainContainer>

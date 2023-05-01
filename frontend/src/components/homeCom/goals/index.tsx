@@ -22,9 +22,13 @@ const GoalsSection = () => {
         <AnimationOnScroll animateIn="animate__bounceInDown">
           <GoalsHeading>Our Achievements in Numbers</GoalsHeading>
           <GoalsText>
-            Transmax is the world’s driving worldwide coordinations supplier —
-            we uphold industry and exchange the worldwide trade of merchandise
-            through land transport.
+            As a global logistics provider, Gulf Marina is committed to
+            facilitating the international trade of goods through reliable and
+            efficient land transportation services. We have earned a reputation
+            as a leading provider of logistics solutions, with a focus on
+            delivering exceptional value to our clients through cutting-edge
+            technology and a vast global network. We Uphold Industry And
+            Exchange The Worldwide Trade Of Merchandise Through Transport.
           </GoalsText>
         </AnimationOnScroll>
 
