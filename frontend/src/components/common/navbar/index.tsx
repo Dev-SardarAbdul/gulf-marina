@@ -1,4 +1,4 @@
-import { NavButton, NavbarWrapper } from "./element";
+import { NavButtonDiv, NavbarWrapper } from "./element";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Button, MainContainer } from "components/common";
@@ -23,9 +23,11 @@ function Topbar() {
               <Nav.Link href="#services">Services</Nav.Link>
               <Nav.Link href="#contact">Contact Us</Nav.Link>
             </Nav>
-            <a href="#contact">
-              <Button readMore={true}>Contact Us</Button>
-            </a>
+            <NavButtonDiv>
+              <a href="#contact">
+                <Button readMore={true}>Contact Us</Button>
+              </a>
+            </NavButtonDiv>
           </Navbar.Collapse>
         </MainContainer>
       </Navbar>

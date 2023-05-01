@@ -6,6 +6,10 @@ export const NavbarWrapper = styled.div`
     background: rgba(67, 67, 67, 0.1) !important;
     backdrop-filter: blur(135px) !important;
 
+    @media (max-width: 991.98px) {
+      background: rgb(0, 19, 26, 0.9) !important ;
+    }
+
     .nav-link {
       font-family: "Barlow";
       font-style: normal;
@@ -16,6 +20,10 @@ export const NavbarWrapper = styled.div`
       color: #ffffff;
       position: relative;
       margin-right: 15px;
+
+      @media (max-width: 991.98px) {
+        text-align: center;
+      }
 
       &:hover {
         color: #ee6700;
@@ -56,21 +64,11 @@ export const NavbarWrapper = styled.div`
   }
 `;
 
-export const NavButton = styled.button`
-  width: 121px;
-  height: 35px;
-  background: #ee6700;
-  border-radius: 32px;
-  border: none;
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-
-  &:hover {
-    color: #ee6700;
-    background: white;
+export const NavButtonDiv = styled.div`
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
   }
 `;

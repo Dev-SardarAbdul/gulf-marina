@@ -11,6 +11,10 @@ export const SwipperWrapper = styled.div`
     top: 0px;
     width: 100%;
     z-index: 100;
+
+    @media (max-width: 991.98px) {
+      position: static;
+    }
   }
 
   .btnsDiv {
@@ -51,10 +55,18 @@ export const SwipperWrapper = styled.div`
 
   .swiper-pagination-bullet-active {
     background-color: #fff;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 
   .swiper-pagination-bullet {
     background-color: #fff;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 
   .firstSlide {
@@ -64,9 +76,9 @@ export const SwipperWrapper = styled.div`
     background-size: cover;
     min-height: 100vh;
 
-    /* @media (max-width: 991.98px) {
-      min-height: auto;
-    } */
+    @media (max-width: 991.98px) {
+      min-height: 80vh;
+    }
   }
   .secondSlide {
     background-image: url(${heroContainer});
@@ -75,9 +87,9 @@ export const SwipperWrapper = styled.div`
     background-size: cover;
     min-height: 100vh;
 
-    /* @media (max-width: 991.98px) {
-      min-height: auto;
-    } */
+    @media (max-width: 991.98px) {
+      min-height: 80vh;
+    }
   }
   .thirdSlide {
     background-image: url(${heroship});
@@ -86,9 +98,9 @@ export const SwipperWrapper = styled.div`
     background-size: cover;
     min-height: 100vh;
 
-    /* @media (max-width: 991.98px) {
-      min-height: auto;
-    } */
+    @media (max-width: 991.98px) {
+      min-height: 80vh;
+    }
   }
 `;
 
@@ -96,7 +108,7 @@ export const TextWrapper = styled.div`
   margin-top: 13rem;
 
   @media (max-width: 991.98px) {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   .readMoreBtnDiv {
