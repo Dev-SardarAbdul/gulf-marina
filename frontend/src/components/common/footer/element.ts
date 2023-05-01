@@ -22,7 +22,7 @@ export const FooterWrapper = styled.div`
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   }
 
@@ -70,6 +70,7 @@ export const FooterText = styled.p`
     width: 100%;
     text-align: justify;
     text-align-last: center;
+    margin-top: 2rem;
   }
 `;
 
@@ -86,10 +87,11 @@ export const FooterCompanyHeading = styled.h1`
   @media (max-width: 991.98px) {
     text-align: center;
     margin-top: 1rem;
+    margin-left: 0px;
   }
 `;
 
-export const FooterOl = styled.li`
+export const FooterOl = styled.div`
   font-family: "Barlow";
   font-style: normal;
   font-weight: 300;
@@ -100,12 +102,37 @@ export const FooterOl = styled.li`
   text-decoration: none !important;
   text-decoration: none !important;
   transition: 0.3s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (max-width: 991.98px) {
+    align-items: center;
+  }
+
+  .olFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    @media (max-width: 991.98px) {
+      width: 200px;
+      justify-content: start;
+      margin-left: 4rem;
+    }
+  }
+
+  .footerIcon {
+    font-size: 32px;
+  }
 
   &:hover {
     color: #ee6700 !important;
   }
 
   a {
+    text-align: start;
     color: #fff !important;
     text-decoration: none !important;
     transition: 0.3s all ease-in-out;
@@ -128,7 +155,6 @@ export const FooterIconWrapper = styled.div`
   @media (max-width: 991.98px) {
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
   }
 
   a {

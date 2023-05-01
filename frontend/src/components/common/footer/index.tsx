@@ -12,6 +12,7 @@ import { MainCol, MainContainer, MainRow } from "components/common";
 import { navLogo, footerArrow } from "assets";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { BsDot } from "react-icons/bs";
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
@@ -41,19 +42,33 @@ const FooterSection = () => {
           <MainCol lg={3}>
             <FooterCompanyHeading>Company</FooterCompanyHeading>
             <FooterOl>
-              <a href="#home">Home</a>
-            </FooterOl>
-            <FooterOl>
-              {" "}
-              <a href="#about">About Us</a>{" "}
-            </FooterOl>
-            <FooterOl>
-              {" "}
-              <a href="#services">Services</a>
-            </FooterOl>
-            <FooterOl>
-              {" "}
-              <a href="#whyUs">Why Choose Us?</a>
+              <div className="olFlex">
+                <a href="#home">
+                  <BsDot className="footerIcon" />
+                  Home
+                </a>
+              </div>
+
+              <div className="olFlex">
+                <a href="#about">
+                  <BsDot className="footerIcon" />
+                  About Us
+                </a>
+              </div>
+
+              <div className="olFlex">
+                <a href="#services">
+                  <BsDot className="footerIcon" />
+                  Services
+                </a>
+              </div>
+
+              <div className="olFlex">
+                <a href="#whyUs">
+                  <BsDot className="footerIcon" />
+                  Why Choose Us?
+                </a>
+              </div>
             </FooterOl>
           </MainCol>
           <MainCol lg={3}>

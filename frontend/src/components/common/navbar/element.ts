@@ -44,11 +44,17 @@ export const NavbarWrapper = styled.div`
         background-color: #ee6700;
         transform-origin: bottom center;
         transition: transform 0.25s ease-out;
+        @media (max-width: 991.98px) {
+          display: none;
+        }
       }
 
       &:hover::after {
         transform: scaleX(1);
         transform-origin: bottom center;
+        @media (max-width: 991.98px) {
+          display: none;
+        }
       }
     }
   }
