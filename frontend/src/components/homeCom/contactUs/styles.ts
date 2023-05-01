@@ -32,7 +32,7 @@ export const ContactUsHeader = styled.h2`
   line-height: 100%;
   text-align: center;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #ee6700;
   margin-top: 7rem;
 
   @media (max-width: 991.98px) {
@@ -52,5 +52,122 @@ export const BtnDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
+`;
+
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+
+  .contactImg {
+    transform: scale(1.01);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      height: 400px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 10px;
+    }
+  }
+  .card {
+    width: 700px;
+    background: #ffffff;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid #ee6700;
+    padding: 0px;
+    border-radius: 10px;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+
+    &:hover {
+      animation-name: headShake;
+      animation-duration: 1s;
+    }
+  }
+`;
+
+export const ImgWrapper = styled.div`
+  position: relative;
+`;
+
+export const ImgTextWrapper = styled.div`
+  position: absolute;
+  top: 30%;
+
+  @media (max-width: 767.98px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 575.98px) {
+    top: 60%;
+  }
+`;
+
+export const ImgHeading = styled.h1`
+  font-family: "Teko" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0;
+  margin-top: 6rem;
+
+  @media (max-width: 575.98px) {
+    width: max-content;
+  }
+`;
+
+export const ImgSubText = styled.p`
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0;
+  margin-top: 0.5rem;
+`;
+
+export const ContactInfoDiv = styled.div`
+  .infoIcon {
+    font-size: 32px;
+    color: #ee6700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .marginIcon {
+    margin-top: 1rem;
+  }
+`;
+export const ContactInfoText = styled.p`
+  width: 80%;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+  border-bottom: 2px solid rgb(97, 97, 95, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  color: rgb(0, 0, 0, 0.65);
+  font-weight: 500;
+
+  &.noBorder {
+    border-bottom: none;
+  }
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
 `;
