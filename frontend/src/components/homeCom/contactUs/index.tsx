@@ -80,7 +80,9 @@ function ContactUs() {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__zoomIn">
           <BtnDiv>
-            <Button readMore={true}> Contact Us</Button>
+            <a href="mailto:info@gulfmarina1.com">
+              <Button readMore={true}>Contact Us</Button>
+            </a>
           </BtnDiv>
         </AnimationOnScroll>
       </MainContainer>
