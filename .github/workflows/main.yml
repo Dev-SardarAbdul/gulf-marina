@@ -32,8 +32,8 @@ jobs:
 
     - name: Build a basic react app
       run: |
-            cd frontend
-            yarn build
+            cd ./frontend
+            npm run build
 
     # Runs a set of commands using the runners shell
     - name: Install Surge
