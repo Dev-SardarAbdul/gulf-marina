@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { navLogo } from "assets";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Lottie from "react-lottie";
-import animationData from "./../../../lotties/srtars.json";
+import animationData from "../../../assets/lotties/srtars.json";
 
 const Container = styled(motion.div)`
   position: absolute;

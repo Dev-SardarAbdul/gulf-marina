@@ -9,6 +9,8 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { BsHouseDoor } from "react-icons/bs";
 
 export const chooseUsData = [
   {
@@ -58,19 +60,19 @@ export const servicesCardData = [
   },
   {
     id: 4,
-    img: cardTruck,
+    icon: <RiSecurePaymentLine className="servicesIcon" />,
     title: "Custom Clearance",
     text: "As a company, we specialize in providing comprehensive customs clearance services to businesses of all sizes. Our team of experienced customs brokers and agents can help ensure that your goods are imported or exported smoothly . ",
   },
   {
     id: 5,
-    img: cardTruck,
+    icon: <BsHouseDoor className="servicesIcon" />,
     title: "Ware Housing",
     text: "Our company provides top-quality warehousing services to meet the storage needs of our clients. We offer a variety of storage solutions, including short-term and long-term storage, temperature-controlled storage, and inventory management services. ",
   },
   {
     id: 6,
-    img: cardTruck,
+    icon: <RiSecurePaymentLine className="servicesIcon" />,
     title: "DDP & DUP",
     text: "Our company provides DDP (Delivered Duty Paid) and DUP (Delivered at Place Unloaded) services to our clients. DDP service means we take care of all import formalities and pay any applicable duties and taxes on behalf of the client, ensuring hassle-free delivery. ",
   },

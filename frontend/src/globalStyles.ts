@@ -95,7 +95,13 @@ iframe
   }
 
    
- 
+ .servicesIcon {
+  width: 64.25px;
+    height: 64.25px;
+    display: block;
+    margin: 3rem auto 1rem auto;
+    color: #ee6700; 
+ }
 `;
 
 export default GlobalStyle;

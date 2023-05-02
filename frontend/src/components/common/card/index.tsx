@@ -28,7 +28,11 @@ const ServicesCard = ({ item, index }) => {
         }
       >
         <div className={`overLay ${isHovered && "darkBG"}`}>
-          <img src={item.img} className="img-fluid airplane" />
+          {item?.img ? (
+            <img src={item.img} className="img-fluid airplane" />
+          ) : (
+            item.icon
+          )}
           <Card.Body>
             <Card.Title className={isHovered && "whiteText"}>
               {item.title}
