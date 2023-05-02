@@ -9,6 +9,7 @@ import Faqs from "./faqs";
 import GoalsSection from "./goals";
 import MainLoader from "components/common/loader/loader";
 import MainGallery from "./gallery";
+import BusinessPartners from "./businessPartners/index.jsx";
 
 const HomeCom = () => {
   const [loader, setLoader] = useState(true);
@@ -31,6 +32,7 @@ const HomeCom = () => {
           <GoalsSection />
           <MainGallery />
           <Faqs />
+          <BusinessPartners />
           <ContactUs />
           <Footer />
         </>
