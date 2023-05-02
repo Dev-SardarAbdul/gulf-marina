@@ -8,6 +8,7 @@ import ContactUs from "./contactUs";
 import Faqs from "./faqs";
 import GoalsSection from "./goals";
 import MainLoader from "components/common/loader/loader";
+import MainGallery from "./gallery";
 
 const HomeCom = () => {
   const [loader, setLoader] = useState(true);
@@ -28,6 +29,7 @@ const HomeCom = () => {
           <WhyChooseUs />
           <Services />
           <GoalsSection />
+          <MainGallery />
           <Faqs />
           <ContactUs />
           <Footer />

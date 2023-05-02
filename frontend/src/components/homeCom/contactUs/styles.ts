@@ -74,7 +74,7 @@ export const CardWrapper = styled.div`
     }
   }
   .card {
-    width: 700px;
+    width: 800px;
     background: #ffffff;
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
     border-bottom: 5px solid #ee6700;
@@ -151,7 +151,7 @@ export const ContactInfoDiv = styled.div`
   }
 `;
 export const ContactInfoText = styled.p`
-  width: 80%;
+  width: 100%;
   text-align: center;
   margin: 0;
   margin-top: 1rem;

@@ -33,7 +33,7 @@ function ContactUs() {
           <CardWrapper>
             <Card>
               <MainRow>
-                <MainCol sm={12} md={6}>
+                {/* <MainCol sm={12} md={4}>
                   <ImgWrapper>
                     <img src={contact} className="img-fluid contactImg" />
                     <ImgTextWrapper>
@@ -45,35 +45,42 @@ function ContactUs() {
                       </ImgSubText>
                     </ImgTextWrapper>
                   </ImgWrapper>
-                </MainCol>
-                <MainCol sm={12} md={6}>
-                  <Card.Body>
-                    <ContactInfoDiv>
-                      <MainRow>
-                        <MainCol>
-                          <BsTelephone className="infoIcon" />
-                          <ContactInfoText>+123 456 789 1011</ContactInfoText>
-                        </MainCol>
-                      </MainRow>
-                      <MainRow>
-                        <MainCol>
-                          <AiOutlineMail className="infoIcon marginIcon" />
-                          <ContactInfoText>
-                            info@gulfmarina1.com
-                          </ContactInfoText>
-                        </MainCol>
-                      </MainRow>
-                      <MainRow>
-                        <MainCol>
-                          <IoLocationOutline className="infoIcon marginIcon " />
-                          <ContactInfoText className="noBorder">
-                            address123
-                          </ContactInfoText>
-                        </MainCol>
-                      </MainRow>
-                    </ContactInfoDiv>
-                  </Card.Body>
-                </MainCol>
+                </MainCol> */}
+                <Card.Body>
+                  <ContactInfoDiv>
+                    <MainRow>
+                      <MainCol>
+                        <BsTelephone className="infoIcon" />
+                        <ContactInfoText>
+                          Call and WhatsApp 24/7
+                          <p style={{ margin: 0 }} className="mt-2">
+                            00966567532402 , 00966536968261
+                          </p>
+                        </ContactInfoText>
+                      </MainCol>
+                    </MainRow>
+                    <MainRow>
+                      <MainCol>
+                        <AiOutlineMail className="infoIcon marginIcon" />
+                        <ContactInfoText>info@gulfmarina1.com</ContactInfoText>
+                      </MainCol>
+                    </MainRow>
+                    <MainRow>
+                      <MainCol>
+                        <IoLocationOutline className="infoIcon marginIcon " />
+                        <ContactInfoText className="noBorder">
+                          Office number 08 - Al-Mina Street, behind Al-Hajjaj
+                          City - Al-Salah Commercial Center - Al-Hindawiya
+                          District - Jeddah
+                          <p style={{ margin: 0 }} className="mt-2">
+                            جدة-حي الهنداوية-شارع المينا خلف مدينة
+                            الحجاج-مركزالصلاح التجاري
+                          </p>
+                        </ContactInfoText>
+                      </MainCol>
+                    </MainRow>
+                  </ContactInfoDiv>
+                </Card.Body>
               </MainRow>
             </Card>
           </CardWrapper>
