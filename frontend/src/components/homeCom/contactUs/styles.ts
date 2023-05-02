@@ -6,7 +6,6 @@ export const ContactUsWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
   overflow: hidden;
 
   @media (max-width: 991.98px) {
@@ -33,7 +32,7 @@ export const ContactUsHeader = styled.h2`
   text-align: center;
   text-transform: capitalize;
   color: #ee6700;
-  margin-top: 7rem;
+  margin: 0px;
 
   @media (max-width: 991.98px) {
     margin-top: 4rem;
@@ -170,4 +169,12 @@ export const ContactInfoText = styled.p`
   @media (max-width: 767.98px) {
     width: 100%;
   }
+`;
+
+export const ContactText = styled.p`
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: #fff;
 `;
