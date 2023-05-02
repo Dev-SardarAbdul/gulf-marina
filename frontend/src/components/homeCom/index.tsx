@@ -15,7 +15,7 @@ const HomeCom = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 300000);
+    }, 5000);
   }, []);
 
   return (

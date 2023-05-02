@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { navLogo } from "assets";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Lottie from "react-lottie";
+import animationData from "./../../../lotties/srtars.json";
 
 const Container = styled(motion.div)`
   position: absolute;
@@ -28,6 +30,23 @@ const Container = styled(motion.div)`
   background-size: cover;
   background-repeat: no-repeat;
   color: green;
+
+  .lottieDiv {
+    position: absolute;
+    top: 0;
+  }
+
+  .lottieDivTwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .lottieDivThree {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
   svg {
     width: 10vw;
@@ -73,6 +92,11 @@ const Text = styled(motion.span)`
     font-family: "Teko" !important;
     font-weight: 700;
     margin-top: 2rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 0;
+      margin-top: 2rem;
+    }
   }
 `;
 
@@ -81,6 +105,11 @@ const Flex = styled.div`
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 4rem;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div``;
@@ -92,6 +121,16 @@ const BottomText = styled.p`
   font-family: "Teko" !important;
   width: 70%;
   text-align: center;
+  text-transform: capitalize;
+
+  @media (max-width: 991.98px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
 
   svg {
     width: 5% !important;
@@ -130,6 +169,15 @@ const pathVariants = {
   },
 };
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
 const MainLoader = () => {
   return (
     <Container
@@ -145,6 +193,15 @@ const MainLoader = () => {
         duration: 2,
       }}
     >
+      <div className="lottieDiv">
+        <Lottie options={defaultOptions} height={400} width={400} />;
+      </div>
+      <div className="lottieDivTwo">
+        <Lottie options={defaultOptions} height={400} width={400} />;
+      </div>
+      <div className="lottieDivThree">
+        <Lottie options={defaultOptions} height={400} width={400} />;
+      </div>
       <Text variants={textVariants} initial="hidden" animate="visible">
         <Flex>
           <Left>
@@ -155,8 +212,9 @@ const MainLoader = () => {
           </Right>
         </Flex>
         <BottomText>
-          <FaQuoteLeft /> Welcome Home to the Top Provider Of Contract Logistics
-          In The World. <FaQuoteRight className="iconSize" />
+          <FaQuoteLeft style={{ marginRight: "10px" }} /> Welcome to where
+          efficiency meets reliability - your ultimate logistics partner.{" "}
+          <FaQuoteRight className="iconSize" />
         </BottomText>
       </Text>
     </Container>
