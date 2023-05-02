@@ -18,14 +18,15 @@ const Container = styled(motion.div)`
 
   width: 100vw;
   height: 100vh;
-
   z-index: 99999 !important;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,18 +35,30 @@ const Container = styled(motion.div)`
   .lottieDiv {
     position: absolute;
     top: 0;
+    @media (max-width: 575.98px) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   .lottieDivTwo {
     position: absolute;
     top: 0;
     left: 0;
+    @media (max-width: 575.98px) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   .lottieDivThree {
     position: absolute;
     top: 0;
     right: 0;
+    @media (max-width: 575.98px) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   svg {
@@ -175,6 +188,7 @@ const defaultOptions = {
   animationData: animationData,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
+    color: "#ff0000",
   },
 };
 
