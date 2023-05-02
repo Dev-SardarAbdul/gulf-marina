@@ -47,6 +47,7 @@ export const FooterWrapper = styled.div`
     height: 24px;
     width: 24px;
     border-radius: 0px;
+    cursor: pointer !important;
 
     @media (max-width: 991.98px) {
       text-align: center !important;

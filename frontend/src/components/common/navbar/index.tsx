@@ -12,7 +12,7 @@ function Topbar() {
         <MainContainer>
           <Link to="/">
             <Navbar.Brand>
-              <img src={navLogo} />
+              <img src={navLogo} className="navImg" />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

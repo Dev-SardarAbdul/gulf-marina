@@ -27,7 +27,6 @@ function ContactUs() {
         <AnimationOnScroll animateIn="animate__bounceInDown">
           <ContactUsHeader>Help Center</ContactUsHeader>
           <ContactText>
-            {" "}
             Consult with our Customer care representatives 24/7
           </ContactText>
         </AnimationOnScroll>

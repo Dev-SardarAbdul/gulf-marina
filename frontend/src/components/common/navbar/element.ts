@@ -10,6 +10,11 @@ export const NavbarWrapper = styled.div`
       background: rgb(0, 19, 26, 0.9) !important ;
     }
 
+    .navImg {
+      height: 61px;
+      width: 61px;
+    }
+
     .nav-link {
       font-family: "Barlow";
       font-style: normal;
