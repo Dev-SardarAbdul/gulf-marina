@@ -8,7 +8,7 @@ import ContactUs from "./contactUs";
 import Faqs from "./faqs";
 import GoalsSection from "./goals";
 import MainLoader from "components/common/loader/loader";
-import MainGallery from "./gallery";
+import MainGallery from "./gallery/index";
 import BusinessPartners from "./businessPartners/index.jsx";
 
 const HomeCom = () => {

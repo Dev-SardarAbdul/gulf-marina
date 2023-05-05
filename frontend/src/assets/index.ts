@@ -45,3 +45,4 @@ export { default as hapag } from "./images/hapag.png";
 export { default as maersk } from "./images/maersk.png";
 export { default as msc } from "./images/msc.png";
 export { default as rmx } from "./images/rmx.png";
+export { default as navLoaderLogo } from "./images/navLoaderLogo.png";

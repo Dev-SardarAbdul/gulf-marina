@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // import bgImg from "../../../assets/images/bgimg.png";
 import { motion } from "framer-motion";
-import { navLogo } from "assets";
+import { navLoaderLogo } from "assets";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Lottie from "react-lottie";
 import animationData from "../../../assets/lotties/srtars.json";
@@ -219,7 +219,7 @@ const MainLoader = () => {
       <Text variants={textVariants} initial="hidden" animate="visible">
         <Flex>
           <Left>
-            <img src={navLogo} style={{ height: "100px" }} />
+            <img src={navLoaderLogo} style={{ height: "100px" }} />
           </Left>
           <Right>
             <h1>Gulf Marina</h1>

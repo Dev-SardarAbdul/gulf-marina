@@ -11,8 +11,9 @@ export const NavbarWrapper = styled.div`
     }
 
     .navImg {
-      height: 61px;
-      width: 61px;
+      height: 51px;
+      width: 51px;
+      border-radius: 50%;
     }
 
     .nav-link {

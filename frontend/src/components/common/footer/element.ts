@@ -27,8 +27,8 @@ export const FooterWrapper = styled.div`
   }
 
   .footerLogo {
-    min-height: 56px;
-    width: 56px;
+    min-height: 51px;
+    width: 51px;
     border-radius: 221px;
     margin-top: 1rem;
 
