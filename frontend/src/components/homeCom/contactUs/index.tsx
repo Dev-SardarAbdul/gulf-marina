@@ -20,11 +20,12 @@ import { contact } from "assets";
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
+import { FiPhoneCall } from "react-icons/fi";
 
 function ContactUs() {
   // Define state for the phone number
-  const [phoneNumber, setPhoneNumber] = useState("00966567532402");
-  const [secondPhoneNumber, setSecondPhoneNumber] = useState("00966536968261");
+  const [phoneNumber, setPhoneNumber] = useState("+966567532402");
+  const [secondPhoneNumber, setSecondPhoneNumber] = useState("+966536968261");
 
   // Function to handle clicking on the phone number
   const handlePhoneNumberClick = () => {
@@ -70,7 +71,7 @@ function ContactUs() {
                               className="mt-2"
                               onClick={handleSecondPhoneNumberClick}
                             >
-                              <BsWhatsapp className="whatsappIcon" />
+                              <FiPhoneCall className="callIcon" />
                               {secondPhoneNumber}
                             </p>
                           </div>

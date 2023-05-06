@@ -21,6 +21,10 @@ export const ContactUsWrapper = styled.div`
     margin-bottom: 3px;
     color: green;
   }
+  .callIcon {
+    margin-right: 10px;
+    margin-bottom: 3px;
+  }
 
   .container {
     margin-top: 4rem;
