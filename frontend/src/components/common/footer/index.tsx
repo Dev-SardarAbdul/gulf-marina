@@ -10,8 +10,8 @@ import {
 } from "./element";
 import { MainCol, MainContainer, MainRow } from "components/common";
 import { navLogo, footerArrow } from "assets";
-import { FaFacebookF } from "react-icons/fa";
-import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
 
 const currentDate = new Date();
@@ -73,15 +73,21 @@ const FooterSection = () => {
           </MainCol>
           <MainCol lg={3}>
             <FooterIconWrapper>
-              <a href="https://facebook.com/" target="_blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=100090710214826&mibextid=ZbWKwL"
+                target="_blank"
+              >
                 <FaFacebookF className="marginIcon" />
               </a>
-              <a href="https://instagram.com/" target="_blank">
+              <a href="https://www.instagram.com/gulfmarina_/" target="_blank">
                 {" "}
                 <AiFillInstagram className="marginIcon" />
               </a>
-              <a href="https://twitter.com/" target="_blank">
-                <AiOutlineTwitter className="marginIcon" />
+              <a
+                href="https://www.linkedin.com/in/marina-gulf-shipping-company-jeddah-617a20266"
+                target="_blank"
+              >
+                <FaLinkedinIn className="marginIcon" />
               </a>
               <br />
             </FooterIconWrapper>

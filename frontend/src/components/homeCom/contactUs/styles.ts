@@ -12,6 +12,16 @@ export const ContactUsWrapper = styled.div`
     min-height: auto;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  .whatsappIcon {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    color: green;
+  }
+
   .container {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -168,6 +178,18 @@ export const ContactInfoText = styled.p`
 
   @media (max-width: 767.98px) {
     width: 100%;
+  }
+
+  .numberWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 `;
 

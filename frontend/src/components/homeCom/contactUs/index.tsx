@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button, MainCol, MainContainer, MainRow } from "components/common";
 import {
   BtnDiv,
@@ -16,11 +17,23 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Card from "react-bootstrap/Card";
 import { contact } from "assets";
-import { BsTelephone } from "react-icons/bs";
+import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 
 function ContactUs() {
+  // Define state for the phone number
+  const [phoneNumber, setPhoneNumber] = useState("00966567532402");
+  const [secondPhoneNumber, setSecondPhoneNumber] = useState("00966536968261");
+
+  // Function to handle clicking on the phone number
+  const handlePhoneNumberClick = () => {
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+  const handleSecondPhoneNumberClick = () => {
+    window.open(`https://wa.me/${secondPhoneNumber}`, "_blank");
+  };
+
   return (
     <ContactUsWrapper id="contact">
       <MainContainer>
@@ -42,16 +55,36 @@ function ContactUs() {
                         <BsTelephone className="infoIcon" />
                         <ContactInfoText>
                           Call and WhatsApp:
-                          <p style={{ margin: 0 }} className="mt-2">
-                            00966567532402 , 00966536968261
-                          </p>
+                          <div className="numberWrapper">
+                            <p
+                              style={{ margin: 0, cursor: "pointer" }}
+                              className="mt-2"
+                              onClick={handlePhoneNumberClick}
+                            >
+                              <BsWhatsapp className="whatsappIcon" />
+                              {phoneNumber},
+                            </p>
+
+                            <p
+                              style={{ margin: 0, cursor: "pointer" }}
+                              className="mt-2"
+                              onClick={handleSecondPhoneNumberClick}
+                            >
+                              <BsWhatsapp className="whatsappIcon" />
+                              {secondPhoneNumber}
+                            </p>
+                          </div>
                         </ContactInfoText>
                       </MainCol>
                     </MainRow>
                     <MainRow>
                       <MainCol>
                         <AiOutlineMail className="infoIcon marginIcon" />
-                        <ContactInfoText>info@gulfmarina1.com</ContactInfoText>
+                        <a href="mailto:info@gulfmarina1.com">
+                          <ContactInfoText>
+                            info@gulfmarina1.com
+                          </ContactInfoText>
+                        </a>
                       </MainCol>
                     </MainRow>
                     <MainRow>
