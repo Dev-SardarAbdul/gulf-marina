@@ -31,9 +31,6 @@ function ContactUs() {
   const handlePhoneNumberClick = () => {
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
   };
-  const handleSecondPhoneNumberClick = () => {
-    window.open(`https://wa.me/${secondPhoneNumber}`, "_blank");
-  };
 
   return (
     <ContactUsWrapper id="contact">
@@ -57,6 +54,10 @@ function ContactUs() {
                         <ContactInfoText>
                           Call and WhatsApp:
                           <div className="numberWrapper">
+                            <p style={{ margin: 0 }} className="mt-2">
+                              <FiPhoneCall className="callIcon" />
+                              {secondPhoneNumber}
+                            </p>
                             <p
                               style={{ margin: 0, cursor: "pointer" }}
                               className="mt-2"
@@ -64,15 +65,6 @@ function ContactUs() {
                             >
                               <BsWhatsapp className="whatsappIcon" />
                               {phoneNumber},
-                            </p>
-
-                            <p
-                              style={{ margin: 0, cursor: "pointer" }}
-                              className="mt-2"
-                              onClick={handleSecondPhoneNumberClick}
-                            >
-                              <FiPhoneCall className="callIcon" />
-                              {secondPhoneNumber}
                             </p>
                           </div>
                         </ContactInfoText>
