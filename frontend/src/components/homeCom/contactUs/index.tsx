@@ -25,7 +25,7 @@ import { FiPhoneCall } from "react-icons/fi";
 function ContactUs() {
   // Define state for the phone number
   const [phoneNumber, setPhoneNumber] = useState("+966567532402");
-  const [secondPhoneNumber, setSecondPhoneNumber] = useState("+966536968261");
+  const [secondPhoneNumber, setSecondPhoneNumber] = useState("+966567532402");
 
   // Function to handle clicking on the phone number
   const handlePhoneNumberClick = () => {
@@ -54,10 +54,8 @@ function ContactUs() {
                         <ContactInfoText>
                           Call and WhatsApp:
                           <div className="numberWrapper">
-                            <p style={{ margin: 0 }} className="mt-2">
-                              <FiPhoneCall className="callIcon" />
-                              {secondPhoneNumber}
-                            </p>
+                            <FiPhoneCall className="callIcon " />
+
                             <p
                               style={{ margin: 0, cursor: "pointer" }}
                               className="mt-2"
