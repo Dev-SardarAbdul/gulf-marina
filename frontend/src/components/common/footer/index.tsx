@@ -84,7 +84,7 @@ const FooterSection = () => {
                 <AiFillInstagram className="marginIcon" />
               </a>
               <a
-                href="https://www.linkedin.com/in/marina-gulf-shipping-company-jeddah-617a20266"
+                href="https://www.linkedin.com/in/marina-gulf-shipping-llc-jeddah-29a7ab234"
                 target="_blank"
               >
                 <FaLinkedinIn className="marginIcon" />
